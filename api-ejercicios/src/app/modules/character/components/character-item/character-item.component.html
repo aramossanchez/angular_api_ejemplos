@@ -1,0 +1,4 @@
+    <div class="character" (click)="characterSelected.emit(character)" routerLink="{{character?.id}}">
+        <h3>{{character?.name}}</h3>
+        <img [src]="character?.image" alt="Image Character">
+    </div>

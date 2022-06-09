@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { CharacterResponse } from '../models/character-response.interface';
-import { Character } from '../models/character.model';
+import { CharacterResponse } from '../../models/character-response.interface';
+import { Character } from '../../models/character.model';
 
 @Injectable({
   providedIn: 'root'

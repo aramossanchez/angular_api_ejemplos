@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Character } from '../../models/character.model';
 
 @Component({
@@ -10,6 +10,9 @@ export class CharacterItemComponent implements OnInit {
 
   @Input()
   character?: Character;
+
+  @Output()
+  characterSelected = new EventEmitter<Character>();
 
   constructor() { }
 

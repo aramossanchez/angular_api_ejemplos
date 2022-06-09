@@ -24,5 +24,9 @@ export class CharacterListComponent implements OnInit {
       }
     );
   }
+  
+  setCharacter(character: Character) {
+    console.log(character);
+  }
 
 }
